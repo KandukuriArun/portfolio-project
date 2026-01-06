@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f172a;
+    padding: 15px 40px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  z-index: 1000;          
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 25px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+    color: #38bdf8;
+}
+.profile-pic {
+    height: 400px;
+    width: 400px;
+}
+.bio-container {
+    display: flex;
+}
+.bio-info {
+    width: 50%;
+}
+.profile-pic {
+    order: 1;
+}
+.bio-container {
+    margin: 20px;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+.skills {
+  padding: 80px 10%;
+  font-family: Arial, sans-serif;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.skills-title::after {
+  content: "";
+  width: 90px;
+  height: 5px;
+  background: #4f46e5;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.skills-box {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skills-box h3 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #4f46e5;
+  border-radius: 10px;
+}
+
+
+.html { width: 90%; }
+.css { width: 85%; }
+.js { width: 80%; }
+.react { width: 75%; }
+.node { width: 70%; }
+.express { width: 65%; }
+
+.experience {
+  padding: 80px 10%;
+  background: #f9fafb;
+  font-family: Arial, sans-serif;
+}
+
+.exp-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.exp-title::after {
+  content: "";
+  width: 90px;
+  height: 5px;
+  background: #4f46e5;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.exp-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.exp-card {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  min-width: 280px;
+}
+
+.exp-card h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.company {
+  color: #4f46e5;
+  font-weight: bold;
+  display: block;
+}
+
+.duration {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.exp-card ul {
+  padding-left: 20px;
+}
+
+.exp-card ul li {
+  margin-bottom: 1
+}
+.contact {
+  padding: 80px 10%;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.contact-title::after {
+  content: "";
+  width: 90px;
+  height: 5px;
+  background: #4f46e5;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.info-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #4338ca;
+}
